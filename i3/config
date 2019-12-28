@@ -166,6 +166,7 @@ bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
 
 # start a terminal
 bindsym $mod+Ctrl+t exec terminal
+bindsym $mod+Ctrl+Return exec terminal
 
 # bindsym $mod+F2 exec palemoon
 bindsym $mod+Ctrl+g exec google-chrome-stable
