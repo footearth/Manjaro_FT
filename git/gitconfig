@@ -1,0 +1,5 @@
+[core]
+	editor = /usr/bin/vim
+[user]
+	name = FooTearth
+	email = footearth@gmail.com
