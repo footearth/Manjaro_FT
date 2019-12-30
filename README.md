@@ -43,7 +43,7 @@ sudo ln -s /usr/bin/vim /usr/bin/vi
 ```
 
 ```
-yay -S htop axel nload curl net-tools
+yay -S htop nload net-tools curl axel aria2
 yay -S wqy-microhei wqy-microhei-lite wqy-bitmapfont wqy-zenhei
 yay -S ttf-roboto noto-fonts ttf-dejavu
 yay -S noto-fonts-cjk adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts
@@ -93,13 +93,19 @@ export QT_IM_MODULE=ibus
 yay -S google-chrome chromium vivaldi
 ```
 
-- 3.2 vs code
+- 3.3 download tool
+
+```
+yay -S motrix
+```
+
+- 3.4 vs code
 
 ```
 yay -S visual-studio-code-bin
 ```
 
-- 3.3 docker
+- 3.5 docker
 
 ```
 yay -S docker
@@ -120,13 +126,13 @@ sudo systemctl restart docker
 sudo systemctl enable docker
 ```
 
-- 3.4 wine
+- 3.6 wine
 
 ```
 yay -S wine wine_gecko wine-mono deepin-wine
 ```
 
-- 3.5 wechat
+- 3.7 wechat
 
 ```
 yay -S deepin-wine-wechat
