@@ -36,6 +36,8 @@ sudo pacman -S yay
 yay -Syu
 ```
 
+- 2.1 init
+
 ```
 yay -S vim
 sudo mv /usr/bin/vi /usr/bin/viex
@@ -51,10 +53,30 @@ yay -S ttf-wps-fonts # ttf-wps-win10 ttf-win10 ttf-windows
 yay -S adobe-source-code-pro-fonts adobe-source-sans-pro-fonts adobe-source-serif-pro-fonts
 ```
 
-3. soft
+- 2.2 docker
+
+```
+yay -S docker
+sudo gpasswd -a $USER docker
+sudo vi /etc/docker/daemon.json
+```
+
+```json
+{
+  "registry-mirrors": [
+    "http://f1361db2.m.daocloud.io"
+  ]
+}
+```
+
+```
+sudo systemctl restart docker
+sudo systemctl enable docker
+```
+
+3. X soft
 
 - 3.1 input
-
 
 ```
 yay -S ibus ibus-qt ibus-rime
@@ -90,51 +112,53 @@ export QT_IM_MODULE=ibus
 - 3.2 browser
 
 ```
-yay -S google-chrome chromium vivaldi
+yay -S falkon google-chrome chromium vivaldi
 ```
 
-- 3.3 download tool
-
-```
-yay -S motrix
-```
-
-- 3.4 vs code
+- 3.3 vs code
 
 ```
 yay -S visual-studio-code-bin
 ```
 
-- 3.5 docker
-
-```
-yay -S docker
-sudo gpasswd -a $USER docker
-sudo vi /etc/docker/daemon.json
-```
-
-```json
-{
-  "registry-mirrors": [
-    "http://f1361db2.m.daocloud.io"
-  ]
-}
-```
-
-```
-sudo systemctl restart docker
-sudo systemctl enable docker
-```
-
-- 3.6 wine
+- 3.4 wine
 
 ```
 yay -S wine wine_gecko wine-mono deepin-wine
 ```
 
-- 3.7 wechat
+- 3.5 wechat
 
 ```
 yay -S deepin-wine-wechat
 ```
 
+- 3.6 translate tool
+
+```
+yay -S goldendict stardict
+```
+
+- 3.7 download tool
+
+```
+yay -S motrix
+```
+
+- 3.8 media player
+
+```
+yay -S mpv
+```
+
+- 3.9 music player
+
+```
+yay -S netease-cloud-music
+```
+
+- 3.10 mail client
+
+```
+yay -S libsecret seahorse geary mailspring claws-mail
+```
