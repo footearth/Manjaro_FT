@@ -162,3 +162,15 @@ yay -S netease-cloud-music
 ```
 yay -S libsecret seahorse geary mailspring claws-mail
 ```
+
+- 3.11 terminal
+
+```
+yay -S tilda alacritty terminus terminator
+```
+
+- 3.12 metting
+
+```
+yay -S zoom
+```
