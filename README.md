@@ -169,7 +169,25 @@ yay -S libsecret seahorse geary mailspring claws-mail
 yay -S tilda alacritty terminus terminator
 ```
 
-- 3.12 metting
+- 3.12 proxy
+
+```
+yay -S proxychains privoxy polipo tinyproxy
+```
+
+- 3.13 screen recorder
+
+```
+yay -S simplescreenrecorder peek
+```
+
+- 3.14 vlog
+
+```
+yay -S kdenlive openshot olive 
+```
+
+- 3.15 metting
 
 ```
 yay -S zoom
