@@ -165,8 +165,10 @@ bindsym $mod+Ctrl+z exec --no-startup-id morc_menu
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
 
 # start a terminal
-bindsym $mod+Ctrl+t exec terminal
-bindsym $mod+Ctrl+Return exec terminal
+# bindsym $mod+Ctrl+t exec terminal
+# bindsym $mod+Ctrl+Return exec terminal
+bindsym $mod+Ctrl+t exec terminus
+bindsym $mod+Ctrl+Return exec terminus
 
 # bindsym $mod+F2 exec palemoon
 bindsym $mod+Ctrl+g exec google-chrome-stable

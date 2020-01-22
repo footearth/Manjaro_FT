@@ -27,7 +27,7 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/arch4edu/$arch
 sudo pacman-mirrors -g
 sudo pacman -Syy
 sudo pacman -S archlinux-keyring
-sudo pacman -S yay
+sudo pacman -S yay aurman
 ```
 
 2. init soft
@@ -45,7 +45,7 @@ sudo ln -s /usr/bin/vim /usr/bin/vi
 ```
 
 ```
-yay -S htop nload net-tools curl axel aria2
+yay -S htop nload net-tools curl axel aria2 font-manager
 yay -S wqy-microhei wqy-microhei-lite wqy-bitmapfont wqy-zenhei
 yay -S ttf-roboto noto-fonts ttf-dejavu
 yay -S noto-fonts-cjk adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts
@@ -166,7 +166,8 @@ yay -S libsecret seahorse geary mailspring claws-mail
 - 3.11 terminal
 
 ```
-yay -S tilda alacritty terminus terminator
+yay -S tilda terminator terminus-terminal-bin
+yay -S alacritty kitty hyper
 ```
 
 - 3.12 proxy
