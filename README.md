@@ -176,19 +176,40 @@ yay -S alacritty kitty hyper
 yay -S proxychains privoxy polipo tinyproxy
 ```
 
-- 3.13 screen recorder
+- 3.13 Reader
+
+```
+yay -S foliate-git
+```
+
+- 3.14 screen recorder
 
 ```
 yay -S simplescreenrecorder peek
 ```
 
-- 3.14 vlog
+- 3.15 vlog
 
 ```
 yay -S kdenlive openshot olive 
 ```
 
-- 3.15 metting
+- 3.16 rdp
+
+```
+yay -S xrdesktop-git freerdp-git
+```
+
+- 3.17 bluetooth
+
+```
+yay -S bluez bluez-utils
+yay -S blueman dbus alias-plugins
+yay -S pulseaudio-bluetooth
+yay -S pulseaudio pulseaudio-alias pavucontrol
+```
+
+- 3.18 metting
 
 ```
 yay -S zoom
