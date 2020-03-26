@@ -50,6 +50,7 @@ yay -S wqy-microhei wqy-microhei-lite wqy-bitmapfont wqy-zenhei
 yay -S ttf-roboto noto-fonts ttf-dejavu
 yay -S noto-fonts-cjk adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts
 yay -S ttf-wps-fonts # ttf-wps-win10 ttf-win10 ttf-windows 
+yay -S all-repository-fonts
 yay -S adobe-source-code-pro-fonts adobe-source-sans-pro-fonts adobe-source-serif-pro-fonts
 ```
 
@@ -182,25 +183,31 @@ yay -S proxychains privoxy polipo tinyproxy
 yay -S foliate-git
 ```
 
-- 3.14 screen recorder
+- 3.14 Project Drawing
+
+```
+yay -S dia yed drawio-desktop bouml staruml akira-git figma-linux
+```
+
+- 3.15 screen recorder
 
 ```
 yay -S simplescreenrecorder peek
 ```
 
-- 3.15 vlog
+- 3.16 vlog
 
 ```
 yay -S kdenlive openshot olive 
 ```
 
-- 3.16 rdp
+- 3.17 rdp
 
 ```
 yay -S xrdesktop-git freerdp-git
 ```
 
-- 3.17 bluetooth
+- 3.18 bluetooth
 
 ```
 yay -S bluez bluez-utils
@@ -209,7 +216,7 @@ yay -S pulseaudio-bluetooth
 yay -S pulseaudio pulseaudio-alias pavucontrol
 ```
 
-- 3.18 metting
+- 3.19 metting
 
 ```
 yay -S zoom
