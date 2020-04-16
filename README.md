@@ -27,7 +27,8 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/arch4edu/$arch
 sudo pacman-mirrors -g
 sudo pacman -Syy
 sudo pacman -S archlinux-keyring
-sudo pacman -S yay aurman
+sudo pacman -S yay
+yay -S aurman
 ```
 
 2. init soft
@@ -45,8 +46,8 @@ sudo ln -s /usr/bin/vim /usr/bin/vi
 ```
 
 ```
-yay -S htop nload net-tools curl axel aria2 font-manager
-yay -S wqy-microhei wqy-microhei-lite wqy-bitmapfont wqy-zenhei
+yay -S htop nload net-tools curl axel aria2 progress
+yay -S font-manager wqy-microhei wqy-microhei-lite wqy-bitmapfont wqy-zenhei
 yay -S ttf-roboto noto-fonts ttf-dejavu
 yay -S noto-fonts-cjk adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts
 yay -S ttf-wps-fonts # ttf-wps-win10 ttf-win10 ttf-windows 
@@ -73,6 +74,12 @@ sudo vi /etc/docker/daemon.json
 ```
 sudo systemctl restart docker
 sudo systemctl enable docker
+```
+
+- 2.3 vm
+
+```
+yay -S virtualbox canonical-multipass kata-linux-container
 ```
 
 3. X soft
@@ -180,7 +187,7 @@ yay -S proxychains privoxy polipo tinyproxy
 - 3.13 Reader
 
 ```
-yay -S foliate-git
+yay -S foliate-git fbreader
 ```
 
 - 3.14 Project Drawing
@@ -220,4 +227,16 @@ yay -S pulseaudio pulseaudio-alias pavucontrol
 
 ```
 yay -S zoom
+```
+
+- 3.20 usb booting
+
+```
+yay -S etcher woeusb windows2usb
+```
+
+- 3.21 thunderbolt support
+
+```
+yay -S thunderbolt-software-user-space bolt tbt
 ```
