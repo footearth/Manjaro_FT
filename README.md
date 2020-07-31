@@ -121,7 +121,7 @@ export QT_IM_MODULE=ibus
 - 3.2 browser
 
 ```
-yay -S falkon google-chrome chromium vivaldi
+yay -S falkon google-chrome chromium vivaldi brave
 ```
 
 - 3.3 vs code
