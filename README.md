@@ -47,6 +47,7 @@ sudo ln -s /usr/bin/vim /usr/bin/vi
 
 ```
 yay -S htop nload net-tools curl axel aria2 progress
+yay -S pulseaudio pavucontrol paprefs
 yay -S font-manager wqy-microhei wqy-microhei-lite wqy-bitmapfont wqy-zenhei
 yay -S ttf-roboto noto-fonts ttf-dejavu
 yay -S noto-fonts-cjk adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts
@@ -139,7 +140,7 @@ inxi -F
 - 3.4 browser
 
 ```
-yay -S falkon google-chrome chromium vivaldi
+yay -S falkon google-chrome chromium vivaldi brave
 ```
 
 - 3.5 vs code
