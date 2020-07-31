@@ -118,104 +118,123 @@ export XMODIFIERS=@im=ibus
 export QT_IM_MODULE=ibus
 ```
 
-- 3.2 browser
+- 3.2 xrandr
+
+```
+yay -S xrandr
+```
+
+- 3.3 lm_sensors
+
+```
+yay -S lm_sensors xsensors fancontrol_gui
+```
+
+```
+sudo sensors-detect
+sudo sensors -s
+sensors -u
+inxi -F
+```
+
+- 3.4 browser
 
 ```
 yay -S falkon google-chrome chromium vivaldi brave
 ```
 
-- 3.3 vs code
+- 3.5 vs code
 
 ```
 yay -S visual-studio-code-bin
 ```
 
-- 3.4 wine
+- 3.6 wine
 
 ```
 yay -S wine wine_gecko wine-mono deepin-wine
 ```
 
-- 3.5 wechat
+- 3.7 wechat
 
 ```
 yay -S deepin-wine-wechat
 ```
 
-- 3.6 translate tool
+- 3.8 translate tool
 
 ```
 yay -S goldendict stardict
 ```
 
-- 3.7 download tool
+- 3.9 download tool
 
 ```
 yay -S motrix
 ```
 
-- 3.8 media player
+- 3.10 media player
 
 ```
 yay -S mpv
 ```
 
-- 3.9 music player
+- 3.11 music player
 
 ```
 yay -S netease-cloud-music
 ```
 
-- 3.10 mail client
+- 3.12 mail client
 
 ```
-yay -S libsecret seahorse geary mailspring claws-mail
+yay -S libsecret seahorse geary mailspring claws-mail protonmail-desktop
 ```
 
-- 3.11 terminal
+- 3.13 terminal
 
 ```
 yay -S tilda terminator terminus-terminal-bin
 yay -S alacritty kitty hyper
 ```
 
-- 3.12 proxy
+- 3.14 proxy
 
 ```
 yay -S proxychains privoxy polipo tinyproxy
 ```
 
-- 3.13 Reader
+- 3.15 Reader
 
 ```
 yay -S foliate-git fbreader
 ```
 
-- 3.14 Project Drawing
+- 3.16 Project Drawing
 
 ```
 yay -S dia yed drawio-desktop bouml staruml akira-git figma-linux
 ```
 
-- 3.15 screen recorder
+- 3.17 screen recorder
 
 ```
 yay -S simplescreenrecorder peek
 ```
 
-- 3.16 vlog
+- 3.18 vlog
 
 ```
 yay -S kdenlive openshot olive 
 ```
 
-- 3.17 rdp
+- 3.19 rdp
 
 ```
 yay -S xrdesktop-git freerdp-git
 ```
 
-- 3.18 bluetooth
+- 3.20 bluetooth
 
 ```
 yay -S bluez bluez-utils
@@ -224,19 +243,19 @@ yay -S pulseaudio-bluetooth
 yay -S pulseaudio pulseaudio-alias pavucontrol
 ```
 
-- 3.19 metting
+- 3.21 metting
 
 ```
 yay -S zoom
 ```
 
-- 3.20 usb booting
+- 3.22 usb booting
 
 ```
 yay -S etcher woeusb windows2usb
 ```
 
-- 3.21 thunderbolt support
+- 3.23 thunderbolt support
 
 ```
 yay -S thunderbolt-software-user-space bolt tbt
