@@ -49,7 +49,7 @@ sudo ln -s /usr/bin/vim /usr/bin/vi
 yay -S htop nload net-tools curl axel aria2 progress
 yay -S pulseaudio pavucontrol paprefs
 yay -S font-manager wqy-microhei wqy-microhei-lite wqy-bitmapfont wqy-zenhei
-yay -S ttf-roboto noto-fonts ttf-dejavu
+yay -S ttf-roboto noto-fonts ttf-dejavu ttf-dejavu-sans-code ttf-sarasa-gothic
 yay -S noto-fonts-cjk adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts
 yay -S ttf-wps-fonts # ttf-wps-win10 ttf-win10 ttf-windows 
 yay -S all-repository-fonts
