@@ -1,7 +1,7 @@
 # Podman
 
 ```
-yay -S podman
+yay -S podman buildah skopeo
 
 # use fish shell
 sudo touch /etc/sub{u, g}id

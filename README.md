@@ -27,8 +27,9 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/arch4edu/$arch
 sudo pacman-mirrors -g
 sudo pacman -Syy
 sudo pacman -S archlinux-keyring
+sudo pacman-key --populate archlinux
+sudo pacman-key --refresh-keys
 sudo pacman -S yay
-yay -S aurman
 ```
 
 2. init soft
