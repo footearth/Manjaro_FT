@@ -47,7 +47,12 @@ sudo ln -s /usr/bin/vim /usr/bin/vi
 ```
 
 ```
-yay -S htop nload net-tools curl axel aria2 progress
+yay -S nload net-tools curl axel aria2
+yay -S progress cv pv the_silver_searcher ripgrep
+yay -S htop atop bashtop iotop iftop nmon
+yay -S cpustat vmstat dstat
+yay -S glances ncdu ranger mc 
+yay -S tig pm multitail httpie
 yay -S pulseaudio pavucontrol paprefs
 yay -S font-manager wqy-microhei wqy-microhei-lite wqy-bitmapfont wqy-zenhei
 yay -S ttf-roboto noto-fonts ttf-dejavu ttf-dejavu-sans-code ttf-sarasa-gothic
@@ -260,4 +265,16 @@ yay -S etcher woeusb windows2usb
 
 ```
 yay -S thunderbolt-software-user-space bolt tbt
+```
+
+- 3.24 helper like man page
+
+```
+yay -S cheat tldr ruby-bropages
+```
+
+- 3.25 switchhosts
+
+```
+yay -S switchhosts-bin
 ```
