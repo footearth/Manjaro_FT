@@ -73,7 +73,7 @@ sudo vi /etc/docker/daemon.json
 ```json
 {
   "registry-mirrors": [
-    "http://f1361db2.m.daocloud.io"
+    "http://hub-mirror.c.163.com"
   ]
 }
 ```
