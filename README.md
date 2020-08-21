@@ -61,6 +61,7 @@ yay -S ttf-wps-fonts # ttf-wps-win10 ttf-win10 ttf-windows
 yay -S adobe-source-code-pro-fonts adobe-source-sans-pro-fonts adobe-source-serif-pro-fonts
 # yay -S all-repository-fonts
 yay -S pm
+yay -S tmux zsh fish
 ```
 
 - 2.2 docker
