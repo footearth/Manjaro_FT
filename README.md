@@ -43,7 +43,7 @@ yay -Syu
 ```
 date
 yay -S ntpdate
-ntpdate ntp1.aliyun.com
+sudo ntpdate ntp1.aliyun.com
 sudo hwclock -w
 ```
 
@@ -66,8 +66,8 @@ yay -S ttf-roboto noto-fonts ttf-dejavu ttf-dejavu-sans-code ttf-sarasa-gothic
 yay -S noto-fonts-cjk adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts
 yay -S ttf-wps-fonts # ttf-wps-win10 ttf-win10 ttf-windows 
 yay -S adobe-source-code-pro-fonts adobe-source-sans-pro-fonts adobe-source-serif-pro-fonts
-# yay -S all-repository-fonts
-yay -S pm
+# -- yay -S all-repository-fonts --
+**yay -S pm**
 yay -S tmux zsh fish
 ```
 
@@ -156,7 +156,7 @@ inxi -F
 - 3.4 browser
 
 ```
-yay -S falkon google-chrome chromium vivaldi brave
+yay -S falkon google-chrome chromium **vivaldi** brave
 ```
 
 - 3.5 vs code
@@ -210,7 +210,7 @@ yay -S libsecret seahorse geary mailspring claws-mail protonmail-desktop
 - 3.13 terminal
 
 ```
-yay -S tilda terminator terminus-terminal-bin
+yay -S tilda terminator **terminus-terminal-bin**
 yay -S alacritty kitty hyper
 ```
 
