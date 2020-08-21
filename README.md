@@ -52,14 +52,15 @@ yay -S progress cv pv the_silver_searcher ripgrep
 yay -S htop atop bashtop iotop iftop nmon
 yay -S cpustat vmstat dstat
 yay -S glances ncdu ranger mc 
-yay -S tig pm multitail httpie
+yay -S tig multitail httpie
 yay -S pulseaudio pavucontrol paprefs
 yay -S font-manager wqy-microhei wqy-microhei-lite wqy-bitmapfont wqy-zenhei
 yay -S ttf-roboto noto-fonts ttf-dejavu ttf-dejavu-sans-code ttf-sarasa-gothic
 yay -S noto-fonts-cjk adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts
 yay -S ttf-wps-fonts # ttf-wps-win10 ttf-win10 ttf-windows 
-yay -S all-repository-fonts
 yay -S adobe-source-code-pro-fonts adobe-source-sans-pro-fonts adobe-source-serif-pro-fonts
+# yay -S all-repository-fonts
+yay -S pm
 ```
 
 - 2.2 docker
@@ -67,6 +68,7 @@ yay -S adobe-source-code-pro-fonts adobe-source-sans-pro-fonts adobe-source-seri
 ```
 yay -S docker
 sudo gpasswd -a $USER docker
+sudo mkdir -p /etc/docker
 sudo vi /etc/docker/daemon.json
 ```
 
@@ -124,10 +126,10 @@ export XMODIFIERS=@im=ibus
 export QT_IM_MODULE=ibus
 ```
 
-- 3.2 xrandr
+- 3.2 arandr
 
 ```
-yay -S xrandr
+yay -S arandr
 ```
 
 - 3.3 lm_sensors
