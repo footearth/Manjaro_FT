@@ -41,6 +41,13 @@ yay -Syu
 - 2.1 init
 
 ```
+date
+yay -S ntpdate
+ntpdate ntp1.aliyun.com
+sudo hwclock -w
+```
+
+```
 yay -S vim
 sudo mv /usr/bin/vi /usr/bin/viex
 sudo ln -s /usr/bin/vim /usr/bin/vi
