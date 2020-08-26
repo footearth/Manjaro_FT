@@ -7,7 +7,7 @@ dest_kernel="./hello-vmlinux.bin"
 dest_rootfs="./hello-rootfs.ext4"
 image_bucket_url="https://s3.amazonaws.com/spec.ccfc.min/img"
 
-export http_proxy=http://192.168.31.116:8123
+export http_proxy=http://127.0.0.1:8123
 export https_proxy=$http_proxy
 curl cip.cc
 

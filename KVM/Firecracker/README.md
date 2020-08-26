@@ -2,22 +2,23 @@
 
 ### 安装 firecracker
 
-```bash
-latest=$(basename $(curl -fsSLI -o /dev/null -w  %{url_effective} https://github.com/firecracker-microvm/firecracker/releases/latest))
-curl -LOJ https://github.com/firecracker-microvm/firecracker/releases/download/${latest}/firecracker-${latest}-$(uname -m)
-mv firecracker-${latest}-$(uname -m) firecracker
+```fish
+export latest=(basename (curl -fsSLI -o /dev/null -w  %{url_effective} https://github.com/firecracker-microvm/firecracker/releases/latest))
+curl -LOJ https://github.com/firecracker-microvm/firecracker/releases/download/$latest/firecracker-$latest-(uname -m)
+mv firecracker-$latest-(uname -m) firecracker
 chmod +x firecracker
-mv firecracker /usr/local/bin/firecracker
+sudo mv firecracker /usr/local/bin/firecracker
 ```
 
 ### 安装 firectl
 
-```bash
+```fish
 curl -Lo firectl https://firectl-release.s3.amazonaws.com/firectl-v0.1.0
 curl -Lo firectl.sha256 https://firectl-release.s3.amazonaws.com/firectl-v0.1.0.sha256
 sha256sum -c firectl.sha256
 chmod +x firectl
-mv firectl /usr/local/bin/firecracker
+sudo mv firectl /usr/local/bin/firectl
+rm firectl.sha256
 ```
 
 ## 测试
@@ -60,8 +61,8 @@ ip addr add 172.16.0.2/24 dev eth0
 ip link set eth0 up
 ip route add default via 172.16.0.1 dev eth0
 
-echo > /etc/resolv.conf <<EOF
-nameserver  8.8.8.8
+cat > /etc/resolv.conf <<EOF
+nameserver 8.8.8.8
 EOF
 ```
 
