@@ -59,7 +59,11 @@ yay -S progress cv pv the_silver_searcher ripgrep
 yay -S htop atop bashtop iotop iftop nmon
 yay -S cpustat vmstat dstat
 yay -S glances ncdu ranger mc 
+<<<<<<< HEAD
 yay -S tig multitail httpie
+=======
+yay -S tig pm multitail httpie
+>>>>>>> add some base cmd
 yay -S pulseaudio pavucontrol paprefs
 yay -S font-manager wqy-microhei wqy-microhei-lite wqy-bitmapfont wqy-zenhei
 yay -S ttf-roboto noto-fonts ttf-dejavu ttf-dejavu-sans-code ttf-sarasa-gothic
@@ -290,6 +294,7 @@ yay -S cheat tldr ruby-bropages
 ```
 yay -S switchhosts-bin
 ```
+<<<<<<< HEAD
 
 - 3.26 simple-scan
 
@@ -316,3 +321,5 @@ yay -S budgie-desktop
 export XDG_CURRENT_DESKTOP=Budgie:GNOME
 exec budgie-desktop
 ```
+=======
+>>>>>>> add some base cmd
