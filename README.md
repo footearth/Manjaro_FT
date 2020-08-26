@@ -290,3 +290,29 @@ yay -S cheat tldr ruby-bropages
 ```
 yay -S switchhosts-bin
 ```
+
+- 3.26 simple-scan
+
+```
+yay -S simple-scan
+```
+
+- 3.27 vnc server && client
+
+```
+yay -S tigervnc tigervnc-viewer
+vncserver -alwaysshared -dpi 96 :1
+x0vncserver -display :0 -passwordfile ~/.vnc/passwd
+vncserver -kill :1
+vncviewer ${ip}:1
+```
+
+- 3.28 Budgie Desktop
+
+```
+yay -S budgie-desktop
+
+# .xinitrc
+export XDG_CURRENT_DESKTOP=Budgie:GNOME
+exec budgie-desktop
+```
