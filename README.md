@@ -294,7 +294,6 @@ yay -S cheat tldr ruby-bropages
 ```
 yay -S switchhosts-bin
 ```
-<<<<<<< HEAD
 
 - 3.26 simple-scan
 
@@ -321,5 +320,3 @@ yay -S budgie-desktop
 export XDG_CURRENT_DESKTOP=Budgie:GNOME
 exec budgie-desktop
 ```
-=======
->>>>>>> add some base cmd
