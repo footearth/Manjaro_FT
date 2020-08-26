@@ -54,7 +54,7 @@ sudo ln -s /usr/bin/vim /usr/bin/vi
 ```
 
 ```
-yay -S nload net-tools curl axel aria2
+yay -S nload net-tools curl axel aria2 ncdu
 yay -S progress cv pv the_silver_searcher ripgrep
 yay -S htop atop bashtop iotop iftop nmon
 yay -S cpustat vmstat dstat
