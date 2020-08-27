@@ -1,0 +1,16 @@
+cluster:
+  name: cluster
+  privateKey: cluster-key
+machines:
+- count: 1
+  backend: ignite
+  spec:
+    image: weaveworks/ignite-centos:7-0.6.0
+    name: node%d
+    portMappings:
+    - containerPort: 22
+  ignite:
+    cpus: 10
+    memory: 60GB
+    diskSize: 800GB
+    kernel: weaveworks/ignite-ubuntu

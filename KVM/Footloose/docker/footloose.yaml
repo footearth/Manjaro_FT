@@ -1,0 +1,11 @@
+cluster:
+  name: cluster
+  privateKey: cluster-key
+machines:
+- count: 1
+  spec:
+    backend: docker
+    image: quay.mirrors.ustc.edu.cn/footloose/centos7
+    name: node%d
+    portMappings:
+    - containerPort: 22

@@ -3,6 +3,10 @@
 export VERSION=v0.7.1
 export GOARCH=$(go env GOARCH 2>/dev/null || echo "amd64")
 
+export http_proxy=http://127.0.0.1:8123
+export https_proxy=$http_proxy
+curl cip.cc
+
 for binary in ignite ignited; do
   echo "Installing ${binary}..."
   curl -fLo ${binary} https://github.com/weaveworks/ignite/releases/download/${VERSION}/${binary}-${GOARCH}
