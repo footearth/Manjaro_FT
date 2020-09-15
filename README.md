@@ -35,7 +35,16 @@ sudo pacman -S yay
 2. init soft
 
 ```
-yay -Syu
+yay -Syyu
+```
+
+- 2.0 switch kernel
+
+```
+yay -Ss linux5 | grep 'and modules'
+yay -Ss linux5 | grep 'headers'
+sudo mhwd-kernel -i linux57 linu57-headers
+sudo mhwd-kernel -i linux57 rmc
 ```
 
 - 2.1 init
@@ -54,7 +63,7 @@ sudo ln -s /usr/bin/vim /usr/bin/vi
 ```
 
 ```
-yay -S nload net-tools curl axel aria2 ncdu
+yay -S nload net-tools curl axel aria2
 yay -S progress cv pv the_silver_searcher ripgrep
 yay -S htop atop bashtop iotop iftop nmon
 yay -S cpustat vmstat dstat
