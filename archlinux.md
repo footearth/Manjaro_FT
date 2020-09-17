@@ -6,45 +6,45 @@
 
 - Set Root Password
 
-```
+```bash
 >> passwd
 ```
 
 - Start SSH
 
-```
+```bash
 >> systemctl start sshd
 ```
 
 - Config ip
 
-```
-ip addr add 10.10.10.101 dev ens18
-ip route add 10.10.10.0/24 dev ens18
-ip route add default via 10.10.10.1 dev ens18
+```bash
+>> ip addr add 10.10.10.101 dev ens18
+>> ip route add 10.10.10.0/24 dev ens18
+>> ip route add default via 10.10.10.1 dev ens18
 ```
 
 - Remote Login
 
-```
+```bash
 >> ssh root@<ip address>
 ```
 
 - Check Boot Mode
 
-```
+```bash
 >> ls /sys/firmware/efi/efivars
 ```
 
 - Check Internet Connection
 
-```
+```bash
 >> ping -c3 223.8.8.8
 ```
 
 - Setup Mirrors
 
-```
+```bash
 >> mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak && cat /etc/pacman.d/mirrorlist.bak | \
   grep --no-group-separator -A1 "China" > /etc/pacman.d/mirrorlist && cat /etc/pacman.d/mirrorlist
 
@@ -56,13 +56,13 @@ ip route add default via 10.10.10.1 dev ens18
 
 - Update the System Clock
 
-```
+```bash
 >> timedatectl set-ntp true && date
 ```
 
 - Select the Disk to Partition
 
-```
+```bash
 >> cfdisk /dev/sdx
 >> cgdisk /dev/sdx
 >> lsblk
@@ -71,7 +71,7 @@ ip route add default via 10.10.10.1 dev ens18
 
 - Format the Partitions
 
-```
+```bash
 >> mkfs.fat -F32 /dev/sda1 # 300M
 >> mkswap /dev/sda2 # 4-8G
 >> mkfs.ext4 /dev/sda3 # left all
@@ -79,16 +79,16 @@ ip route add default via 10.10.10.1 dev ens18
 
 - Mount the File Systems
 
-```
-mount /dev/sda3 /mnt
-swapon /dev/sda2
-mkdir /mnt/boot
-mount /dev/sda1 /mnt/boot
+```bash
+>> mount /dev/sda3 /mnt
+>> swapon /dev/sda2
+>> mkdir /mnt/boot
+>> mount /dev/sda1 /mnt/boot
 ```
 
 - Install the Base Packages
 
-```
+```bash
 >> pacstrap /mnt \
   base base-devel \
   linux linux-headers linux-firmware \
@@ -98,13 +98,13 @@ mount /dev/sda1 /mnt/boot
 
 - Fstab
 
-```
+```bash
 >> genfstab -U /mnt >> /mnt/etc/fstab && cat /mnt/etc/fstab
 ```
 
 - Chroot
 
-```
+```bash
 >> arch-chroot /mnt
 ```
 
@@ -112,14 +112,14 @@ mount /dev/sda1 /mnt/boot
 
 - Time Zone
 
-```
+```bash
 >> ln -sf /usr/share/zoneinfo/Pacific/Auckland /etc/localtime
 >> hwclock --systohc
 ```
 
 - Localization
 
-```
+```bash
 >> vim /etc/locale.gen
 >> cat /etc/locale.gen | grep en_US
 >> locale-gen
@@ -128,35 +128,43 @@ mount /dev/sda1 /mnt/boot
 
 - Host Name
 
-```
+```bash
 >> echo arch > /etc/hostname && cat /etc/hostname
 ```
 
 - Hostnames
 
-```
+```bash
 >> vim /etc/hosts
 >> cat /etc/hosts
 ```
 
+```conf
+127.0.0.1	  localhost
+::1		      localhost
+127.0.1.1	  myhostname.localdomain	myhostname
+```
+
 - Password
 
-```
+```bash
 >> passwd
 ```
 
 - Install EFI Boot Manager
 
-```
+```bash
 >> bootctl --path=/boot install
 ```
 
 - Loader Configuration
 
-```
+```bash
 >> vim /boot/loader/loader.conf
 >> cat /boot/loader/loader.conf
+```
 
+```conf
 #timeout 3
 #console-mode keep
 default arch-*
@@ -164,10 +172,12 @@ default arch-*
 
 - Add Arch Linux Loader Entry
 
-```
+```bash
 >> vim /boot/loader/entries/arch.conf
 >> cat /boot/loader/entries/arch.conf
+```
 
+```conf
 title	Arch Linux
 linux	/vmlinuz-linux
 initrd	/initramfs-linux.img
@@ -176,7 +186,7 @@ options	root=UUID=f691168b-f435-453c-b024-bc34baf0fc5f rw
 
 - Boot to Actual System
 
-```
+```bash
 >> exit
 >> reboot
 ```
@@ -185,26 +195,26 @@ options	root=UUID=f691168b-f435-453c-b024-bc34baf0fc5f rw
 
 - Config Network
 
-```
-ip addr
-ip route
-iw
-nmcli
-nmtui
+```bash
+>> ip addr
+>> ip route
+>> iw
+>> nmcli
+>> nmtui
 ```
 
 - Start the Daemon
 
-```
-systemctl start NetworkManager
-systemctl enable NetworkManager
-systemctl start sshd
-systemctl enable sshd
+```bash
+>> systemctl start NetworkManager
+>> systemctl enable NetworkManager
+>> systemctl start sshd
+>> systemctl enable sshd
 ```
 
 - Add User
 
-```
+```bash
 >> useraddd -m footearth
 >> passwd footearth
 >> visudo
@@ -212,10 +222,12 @@ systemctl enable sshd
 
 - Allow Root SSH Remote Login
 
-```
+```bash
 >> vim /etc/ssh/sshd_config
 >> cat /etc/ssh/sshd_config | grep PermitRootLogin
+```
 
+```conf
 PermitRootLogin yes
 ```
 
