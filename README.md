@@ -72,7 +72,7 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/arch4edu/$arch
 ```
 
 ```bash
->> yay -S tmux zsh fish
+>> yay -S tmux zsh fish mosh
 
 
 >> yay -S nload net-tools curl axel aria2
