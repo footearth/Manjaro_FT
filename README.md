@@ -75,6 +75,7 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/arch4edu/$arch
 >> yay -S tmux zsh fish mosh
 
 
+>> yay -S bat ag fd fzf
 >> yay -S nload net-tools curl axel aria2
 >> yay -S progress cv pv the_silver_searcher ripgrep
 >> yay -S htop atop bashtop iotop iftop nmon
