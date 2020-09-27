@@ -260,7 +260,7 @@ export QT_IM_MODULE=ibus
 - 3.17 screen recorder
 
 ```bash
->> yay -S simplescreenrecorder peek
+>> yay -S kazam simplescreenrecorder peek qt-recordmydesktop
 ```
 
 - 3.18 vlog
