@@ -107,6 +107,7 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/arch4edu/$arch
   "registry-mirrors": [
     "https://hub-mirror.c.163.com",
     "https://docker.mirrors.ustc.edu.cn",
+    "https://registry.cn-hangzhou.aliyuncs.com",
     "https://mirror.ccs.tencentyun.com"
   ]
 }
