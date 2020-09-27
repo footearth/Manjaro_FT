@@ -105,9 +105,9 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/arch4edu/$arch
 ```json
 {
   "registry-mirrors": [
-    "https://hub-mirror.c.163.com",
-    "https://docker.mirrors.ustc.edu.cn",
     "https://registry.cn-hangzhou.aliyuncs.com",
+    "https://docker.mirrors.ustc.edu.cn",
+    "https://hub-mirror.c.163.com",
     "https://mirror.ccs.tencentyun.com"
   ]
 }
@@ -353,4 +353,10 @@ exec budgie-desktop
 ```bash
 >> yay -S albert-lite
 >> yay -S albert
+```
+
+- 3.31 eDex UI
+
+```bash
+>> yay -S edex-ui-git
 ```
