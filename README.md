@@ -202,80 +202,86 @@ export QT_IM_MODULE=ibus
 >> yay -S deepin-wine-wechat
 ```
 
-- 3.8 translate tool
+- 3.8 Screenshot Tool
+
+```bash
+>> yay -S shutter flameshot
+```
+
+- 3.9 translate tool
 
 ```bash
 >> yay -S goldendict stardict
 ```
 
-- 3.9 download tool
+- 3.10 download tool
 
 ```bash
 >> yay -S motrix
 ```
 
-- 3.10 media player
+- 3.11 media player
 
 ```bash
 >> yay -S mpv
 ```
 
-- 3.11 music player
+- 3.12 music player
 
 ```bash
 >> yay -S netease-cloud-music
 ```
 
-- 3.12 mail client
+- 3.13 mail client
 
 ```bash
 >> yay -S libsecret seahorse geary mailspring claws-mail protonmail-desktop
 ```
 
-- 3.13 terminal
+- 3.14 terminal
 
 ```bash
 >> yay -S tilda terminator terminus-terminal-bin
 >> yay -S alacritty kitty hyper
 ```
 
-- 3.14 proxy
+- 3.15 proxy
 
 ```bash
 >> yay -S proxychains privoxy polipo tinyproxy
 ```
 
-- 3.15 Reader
+- 3.16 Reader
 
 ```bash
 >> yay -S foliate-git fbreader
 ```
 
-- 3.16 Project Drawing
+- 3.17 Project Drawing
 
 ```bash
 >> yay -S dia yed drawio-desktop bouml staruml akira-git figma-linux
 ```
 
-- 3.17 screen recorder
+- 3.18 screen recorder
 
 ```bash
 >> yay -S kazam simplescreenrecorder peek qt-recordmydesktop
 ```
 
-- 3.18 vlog
+- 3.19 vlog
 
 ```bash
 >> yay -S kdenlive openshot olive 
 ```
 
-- 3.19 rdp
+- 3.20 rdp
 
 ```bash
 >> yay -S xrdesktop-git freerdp-git
 ```
 
-- 3.20 bluetooth
+- 3.21 bluetooth
 
 ```bash
 >> yay -S bluez bluez-utils
@@ -284,43 +290,43 @@ export QT_IM_MODULE=ibus
 >> yay -S pulseaudio pulseaudio-alias pavucontrol
 ```
 
-- 3.21 metting
+- 3.22 metting
 
 ```bash
 >> yay -S zoom
 ```
 
-- 3.22 usb booting
+- 3.23 usb booting
 
 ```bash
 >> yay -S etcher woeusb windows2usb
 ```
 
-- 3.23 thunderbolt support
+- 3.24 thunderbolt support
 
 ```bash
 >> yay -S thunderbolt-software-user-space bolt tbt
 ```
 
-- 3.24 helper like man page
+- 3.25 helper like man page
 
 ```bash
 >> yay -S cheat tldr ruby-bropages
 ```
 
-- 3.25 switchhosts
+- 3.26 switchhosts
 
 ```bash
 >> yay -S switchhosts-bin
 ```
 
-- 3.26 simple-scan
+- 3.27 simple-scan
 
 ```bash
 >> yay -S simple-scan
 ```
 
-- 3.27 vnc server && client
+- 3.28 vnc server && client
 
 ```bash
 >> yay -S tigervnc tigervnc-viewer
@@ -330,7 +336,7 @@ export QT_IM_MODULE=ibus
 >> vncviewer ${ip}:1
 ```
 
-- 3.28 Budgie Desktop
+- 3.29 Budgie Desktop
 
 ```bash
 >> yay -S budgie-desktop
@@ -342,20 +348,20 @@ export XDG_CURRENT_DESKTOP=Budgie:GNOME
 exec budgie-desktop
 ```
 
-- 3.29 pm
+- 3.30 pm
 
 ```bash
 >> yay -S pm
 ```
 
-- 3.30 albert
+- 3.31 albert
 
 ```bash
 >> yay -S albert-lite
 >> yay -S albert
 ```
 
-- 3.31 eDex UI
+- 3.32 eDex UI
 
 ```bash
 >> yay -S edex-ui-git
