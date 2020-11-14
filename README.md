@@ -32,7 +32,10 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/arch4edu/$arch
 ```
 
 ```bash
+>> mkdir ~/.config/yay
+>> yay -Syu --devel --combinedupgrade --save
 >> yay --aururl "https://aur.tuna.tsinghua.edu.cn" --save
+>> yay -P -g
 ```
 
 ```bash
@@ -75,9 +78,9 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/arch4edu/$arch
 >> yay -S tmux zsh fish mosh
 
 
->> yay -S bat ag fd fzf
+>> yay -S bat the_silver_searcher fd fzf # the_silver_searcher = ag
 >> yay -S nload net-tools curl axel aria2
->> yay -S progress cv pv the_silver_searcher ripgrep
+>> yay -S progress cv pv ripgrep
 >> yay -S htop atop bashtop iotop iftop nmon
 >> yay -S cpustat vmstat dstat
 >> yay -S glances ncdu ranger mc 
@@ -181,7 +184,9 @@ export QT_IM_MODULE=ibus
 - 3.4 browser
 
 ```bash
->> yay -S falkon google-chrome chromium vivaldi brave
+>> yay -S falkon google-chrome chromium brave
+>> yay -S microsoft-edge-dev-bin
+>> yay -S vivaldi-shapshot
 ```
 
 - 3.5 vs code
