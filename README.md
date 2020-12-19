@@ -3,6 +3,13 @@
 1. init config
 
 ```bash
+>> date
+>> yay -S ntpdate
+>> sudo ntpdate ntp1.aliyun.com
+>> sudo hwclock -w
+```
+
+```bash
 >> sudo pacman-mirrors -i -c China -m rank
 ```
 
@@ -62,13 +69,6 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/arch4edu/$arch
 - 2.1 init
 
 ```bash
->> date
->> yay -S ntpdate
->> sudo ntpdate ntp1.aliyun.com
->> sudo hwclock -w
-```
-
-```bash
 >> yay -S vim
 >> sudo mv /usr/bin/vi /usr/bin/viex
 >> sudo ln -s /usr/bin/vim /usr/bin/vi
@@ -78,6 +78,7 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/arch4edu/$arch
 >> yay -S tmux zsh fish mosh
 
 
+>> yay -S unzip
 >> yay -S bat the_silver_searcher fd fzf # the_silver_searcher = ag
 >> yay -S nload net-tools curl axel aria2
 >> yay -S progress cv pv ripgrep
@@ -186,7 +187,7 @@ export QT_IM_MODULE=ibus
 ```bash
 >> yay -S falkon google-chrome chromium brave
 >> yay -S microsoft-edge-dev-bin
->> yay -S vivaldi-shapshot
+>> yay -S vivaldi-snapshot
 ```
 
 - 3.5 vs code
@@ -246,7 +247,9 @@ export QT_IM_MODULE=ibus
 - 3.14 terminal
 
 ```bash
->> yay -S tilda terminator terminus-terminal-bin
+>> yay -S tilda terminator
+>> yay -S terminus-terminal-bin
+
 >> yay -S alacritty kitty hyper
 ```
 
@@ -259,7 +262,7 @@ export QT_IM_MODULE=ibus
 - 3.16 Reader
 
 ```bash
->> yay -S foliate-git fbreader
+>> yay -S foliate fbreader
 ```
 
 - 3.17 Project Drawing
@@ -304,7 +307,9 @@ export QT_IM_MODULE=ibus
 - 3.23 usb booting
 
 ```bash
->> yay -S etcher woeusb windows2usb
+>> yay -S etcher
+
+>> yay -S woeusb windows2usb
 ```
 
 - 3.24 thunderbolt support
@@ -362,8 +367,9 @@ exec budgie-desktop
 - 3.31 albert
 
 ```bash
->> yay -S albert-lite
 >> yay -S albert
+
+>> yay -S albert-lite
 ```
 
 - 3.32 eDex UI
