@@ -178,7 +178,8 @@ export QT_IM_MODULE=ibus
 ### Browser
 
 ```bash
->> yay -S falkon google-chrome chromium brave
+>> yay -S palemoon falkon
+>> yay -S opera google-chrome chromium brave
 >> yay -S microsoft-edge-dev-bin
 >> yay -S vivaldi-snapshot
 ```
@@ -284,6 +285,7 @@ export QT_IM_MODULE=ibus
 >> sudo mhwd-kernel -i linux57 linu57-headers
 >> sudo mhwd-kernel -i linux57 rmc
 ```
+
 ### vm
 
 ```bash
