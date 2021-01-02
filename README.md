@@ -1,16 +1,19 @@
 # Manjaro Config
 
-1. init config
+## Init
+
+### Sync Date
 
 ```bash
 >> date
->> yay -S ntpdate
 >> sudo ntpdate ntp1.aliyun.com
 >> sudo hwclock -w
 ```
 
+### Mirrors
+
 ```bash
->> sudo pacman-mirrors -i -c China -m rank
+>> sudo pacman-mirrors -i -c China -m rank -g
 ```
 
 ```bash
@@ -29,14 +32,19 @@ SigLevel = Never
 Server = https://mirrors.tuna.tsinghua.edu.cn/arch4edu/$arch
 ```
 
+### Yay
+
 ```bash
->> sudo pacman-mirrors -g
->> sudo pacman -Syy
->> sudo pacman -S archlinux-keyring
->> sudo pacman-key --populate archlinux
->> sudo pacman-key --refresh-keys
 >> sudo pacman -S yay
+
+# >> sudo pacman-mirrors -g
+# >> sudo pacman -Syy
+# >> sudo pacman -S archlinux-keyring
+# >> sudo pacman-key --populate archlinux
+# >> sudo pacman-key --refresh-keys
 ```
+
+### Yay Mirror
 
 ```bash
 >> mkdir ~/.config/yay
@@ -45,34 +53,32 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/arch4edu/$arch
 >> yay -P -g
 ```
 
+### Go mirror
+
 ```bash
 >> yay -S go
 >> go env -w GO111MODULE=on
 >> go env -w GOPROXY=https://goproxy.io,direct
 ```
 
-2. init soft
+### Soft
+
+### init soft
 
 ```bash
 >> yay -Syyu
+>> yay -S base-devel
 ```
 
-- 2.0 switch kernel
-
-```bash
->> yay -Ss linux5 | grep 'and modules'
->> yay -Ss linux5 | grep 'headers'
->> sudo mhwd-kernel -i linux57 linu57-headers
->> sudo mhwd-kernel -i linux57 rmc
-```
-
-- 2.1 init
+### Vim
 
 ```bash
 >> yay -S vim
 >> sudo mv /usr/bin/vi /usr/bin/viex
 >> sudo ln -s /usr/bin/vim /usr/bin/vi
 ```
+
+### Some base soft
 
 ```bash
 >> yay -S tmux zsh fish mosh
@@ -82,8 +88,9 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/arch4edu/$arch
 >> yay -S bat the_silver_searcher fd fzf # the_silver_searcher = ag
 >> yay -S nload net-tools curl axel aria2
 >> yay -S progress cv pv ripgrep
->> yay -S htop atop bashtop iotop iftop nmon
->> yay -S cpustat vmstat dstat
+>> yay -S htop
+>> # yay -S atop bashtop iotop iftop nmon
+>> # yay -S cpustat vmstat dstat
 >> yay -S glances ncdu ranger mc 
 >> yay -S tig multitail httpie
 >> yay -S font-manager wqy-microhei wqy-microhei-lite wqy-bitmapfont wqy-zenhei
@@ -92,12 +99,11 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/arch4edu/$arch
 >> yay -S ttf-wps-fonts # ttf-wps-win10 ttf-win10 ttf-windows 
 >> yay -S adobe-source-code-pro-fonts adobe-source-sans-pro-fonts adobe-source-serif-pro-fonts
 
->> yay -S pulseaudio pavucontrol paprefs
 
 >> # -- yay -S all-repository-fonts --
 ```
 
-- 2.2 docker
+### Docker
 
 ```bash
 >> yay -S docker
@@ -122,15 +128,21 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/arch4edu/$arch
 >> sudo systemctl enable docker
 ```
 
-- 2.3 vm
+### Proxy
 
 ```bash
->> yay -S virtualbox canonical-multipass kata-linux-container
+>> yay -S proxychains privoxy polipo tinyproxy
 ```
 
-3. X soft
+## X Soft
 
-- 3.1 input
+### arandr
+
+```bash
+>> yay -S arandr
+```
+
+### Input -- ibus-rime
 
 ```bash
 >> yay -S ibus ibus-qt ibus-rime
@@ -163,13 +175,122 @@ export XMODIFIERS=@im=ibus
 export QT_IM_MODULE=ibus
 ```
 
-- 3.2 arandr
+### Browser
 
 ```bash
->> yay -S arandr
+>> yay -S falkon google-chrome chromium brave
+>> yay -S microsoft-edge-dev-bin
+>> yay -S vivaldi-snapshot
 ```
 
-- 3.3 lm_sensors
+### VS Code
+
+```bash
+>> yay -S visual-studio-code-bin
+```
+
+### wine
+
+```bash
+>> yay -S wine wine_gecko wine-mono # deepin-wine
+```
+
+### WeChat
+
+```bash
+>> yay -S deepin-wine-wechat
+```
+
+### Screenshot
+
+```bash
+>> yay -S scrot shutter flameshot deepin-screenshot
+```
+
+### Translator
+
+```bash
+>> yay -S goldendict stardict
+```
+
+### Download
+
+```bash
+>> yay -S motrix
+```
+
+### Media Player
+
+```bash
+>> yay -S mpv
+```
+
+### Music Player
+
+```bash
+>> yay -S netease-cloud-music
+```
+
+### Wps Office
+
+```bash
+>> yay -S wps-office
+```
+
+### Terminal
+
+```bash
+>> yay -S tilda terminator
+>> yay -S terminus-terminal-bin
+
+>> # yay -S alacritty kitty hyper
+```
+
+### Reader
+
+```bash
+>> yay -S foliate fbreader
+```
+
+### Usb Booting
+
+```bash
+>> yay -S etcher
+
+>> # yay -S woeusb windows2usb
+```
+
+### switchhosts
+
+```bash
+>> yay -S switchhosts-bin
+```
+
+### albert
+
+```bash
+>> yay -S albert
+
+>> # yay -S albert-lite
+```
+
+## Other
+
+### switch kernel
+
+```bash
+>> yay -Ss linux5 | grep 'and modules'
+>> yay -Ss linux5 | grep 'headers'
+>> sudo mhwd-kernel -i linux57 linu57-headers
+>> sudo mhwd-kernel -i linux57 rmc
+```
+### vm
+
+```bash
+>> yay -S virtualbox canonical-multipass kata-linux-container
+```
+
+### lm_sensors
 
 ```bash
 >> yay -S lm_sensors xsensors fancontrol_gui
@@ -182,161 +303,72 @@ export QT_IM_MODULE=ibus
 >> inxi -F
 ```
 
-- 3.4 browser
-
-```bash
->> yay -S falkon google-chrome chromium brave
->> yay -S microsoft-edge-dev-bin
->> yay -S vivaldi-snapshot
-```
-
-- 3.5 vs code
-
-```bash
->> yay -S visual-studio-code-bin
-```
-
-- 3.6 wine
-
-```bash
->> yay -S wine wine_gecko wine-mono deepin-wine
-```
-
-- 3.7 wechat
-
-```bash
->> yay -S deepin-wine-wechat
-```
-
-- 3.8 Screenshot Tool
-
-```bash
->> yay -S shutter flameshot
-```
-
-- 3.9 translate tool
-
-```bash
->> yay -S goldendict stardict
-```
-
-- 3.10 download tool
-
-```bash
->> yay -S motrix
-```
-
-- 3.11 media player
-
-```bash
->> yay -S mpv
-```
-
-- 3.12 music player
-
-```bash
->> yay -S netease-cloud-music
-```
-
-- 3.13 mail client
+### mail client
 
 ```bash
 >> yay -S libsecret seahorse geary mailspring claws-mail protonmail-desktop
 ```
 
-- 3.14 terminal
-
-```bash
->> yay -S tilda terminator
->> yay -S terminus-terminal-bin
-
->> yay -S alacritty kitty hyper
-```
-
-- 3.15 proxy
-
-```bash
->> yay -S proxychains privoxy polipo tinyproxy
-```
-
-- 3.16 Reader
-
-```bash
->> yay -S foliate fbreader
-```
-
-- 3.17 Project Drawing
+### Project Drawing
 
 ```bash
 >> yay -S dia yed drawio-desktop bouml staruml akira-git figma-linux
 ```
 
-- 3.18 screen recorder
+### screen recorder
 
 ```bash
 >> yay -S kazam simplescreenrecorder peek qt-recordmydesktop
 ```
 
-- 3.19 vlog
+### vlog
 
 ```bash
 >> yay -S kdenlive openshot olive 
 ```
 
-- 3.20 rdp
+### rdp
 
 ```bash
 >> yay -S xrdesktop-git freerdp-git
 ```
 
-- 3.21 bluetooth
+### bluetooth
 
 ```bash
 >> yay -S bluez bluez-utils
->> yay -S blueman dbus alias-plugins
+>> yay -S blueman dbus # alias-plugins
 >> yay -S pulseaudio-bluetooth
->> yay -S pulseaudio pulseaudio-alias pavucontrol
+>> yay -S pulseaudio pavucontrol # pulseaudio-alias 
+
+>> yay -S paprefs
 ```
 
-- 3.22 metting
+### metting
 
 ```bash
 >> yay -S zoom
 ```
 
-- 3.23 usb booting
-
-```bash
->> yay -S etcher
-
->> yay -S woeusb windows2usb
-```
-
-- 3.24 thunderbolt support
+### thunderbolt support
 
 ```bash
 >> yay -S thunderbolt-software-user-space bolt tbt
 ```
 
-- 3.25 helper like man page
+### helper like man page
 
 ```bash
 >> yay -S cheat tldr ruby-bropages
 ```
 
-- 3.26 switchhosts
-
-```bash
->> yay -S switchhosts-bin
-```
-
-- 3.27 simple-scan
+### simple-scan
 
 ```bash
 >> yay -S simple-scan
 ```
 
-- 3.28 vnc server && client
+### vnc server && client
 
 ```bash
 >> yay -S tigervnc tigervnc-viewer
@@ -346,7 +378,7 @@ export QT_IM_MODULE=ibus
 >> vncviewer ${ip}:1
 ```
 
-- 3.29 Budgie Desktop
+### Budgie Desktop
 
 ```bash
 >> yay -S budgie-desktop
@@ -358,21 +390,13 @@ export XDG_CURRENT_DESKTOP=Budgie:GNOME
 exec budgie-desktop
 ```
 
-- 3.30 pm
+### pm
 
 ```bash
 >> yay -S pm
 ```
 
-- 3.31 albert
-
-```bash
->> yay -S albert
-
->> yay -S albert-lite
-```
-
-- 3.32 eDex UI
+### eDex UI
 
 ```bash
 >> yay -S edex-ui-git
