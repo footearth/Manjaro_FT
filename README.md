@@ -35,7 +35,7 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/arch4edu/$arch
 ### Yay
 
 ```bash
->> sudo pacman -S yay
+>> sudo pacman -Syy yay
 
 # >> sudo pacman-mirrors -g
 # >> sudo pacman -Syy
@@ -273,6 +273,11 @@ export QT_IM_MODULE=ibus
 >> yay -S albert
 
 >> # yay -S albert-lite
+```
+### Caffeine
+
+```bash
+>> yay -S caffeine
 ```
 
 ## Other
