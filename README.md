@@ -178,10 +178,13 @@ export QT_IM_MODULE=ibus
 ### Browser
 
 ```bash
->> yay -S palemoon falkon
->> yay -S opera google-chrome chromium brave
+>> yay -S palemoon
+>> yay -S vivaldi
+>> yay -S brave
 >> yay -S microsoft-edge-dev-bin
->> yay -S vivaldi-snapshot
+>> yay -S google-chrome chromium 
+>> yay -S opera
+>> yay -S falkon
 ```
 
 ### VS Code
