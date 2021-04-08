@@ -2,14 +2,6 @@
 
 ## Init
 
-### Sync Date
-
-```bash
->> date
->> sudo ntpdate ntp1.aliyun.com
->> sudo hwclock -w
-```
-
 ### Mirrors
 
 ```bash
@@ -53,6 +45,12 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/arch4edu/$arch
 >> yay -P -g
 ```
 
+### Paru
+
+```bash
+>> sudo yay -S paru # proxy
+```
+
 ### Go mirror
 
 ```bash
@@ -85,7 +83,8 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/arch4edu/$arch
 
 
 >> yay -S unzip
->> yay -S bat the_silver_searcher fd fzf # the_silver_searcher = ag
+>> yay -S exa lsd
+>> yay -S jq bat the_silver_searcher fd fzf # the_silver_searcher = ag
 >> yay -S nload net-tools curl axel aria2
 >> yay -S progress cv pv ripgrep
 >> yay -S htop
@@ -202,25 +201,9 @@ export QT_IM_MODULE=ibus
 ### WeChat
 
 ```bash
->> yay -S deepin-wine-wechat
-```
+>> yay -S wechat-uos
 
-### Screenshot
-
-```bash
->> yay -S scrot shutter flameshot deepin-screenshot
-```
-
-### Translator
-
-```bash
->> yay -S goldendict stardict
-```
-
-### Download
-
-```bash
->> yay -S motrix
+>> # yay -S deepin-wine-wechat
 ```
 
 ### Media Player
@@ -245,7 +228,7 @@ export QT_IM_MODULE=ibus
 
 ```bash
 >> yay -S tilda terminator
->> yay -S terminus-terminal-bin
+>> yay -S terminus-terminal-bin # proxy
 
 >> # yay -S alacritty kitty hyper
 ```
@@ -264,26 +247,56 @@ export QT_IM_MODULE=ibus
 >> # yay -S woeusb windows2usb
 ```
 
-### switchhosts
-
-```bash
->> yay -S switchhosts-bin
-```
-
 ### albert
 
 ```bash
->> yay -S albert
+>> yay -S albert-minimal # proxy
 
+>> # yay -S albert
 >> # yay -S albert-lite
 ```
+
+### kodi todesk deskcreen m3u8-downloader
+
+## Other
+
+### Sync Date
+
+```bash
+>> date
+>> sudo ntpdate ntp1.aliyun.com
+>> sudo hwclock -w
+```
+
+### switchhosts
+
+```bash
+>> yay -S switchhosts-bin # proxy
+```
+
+### Screenshot
+
+```bash
+>> yay -S scrot shutter flameshot deepin-screenshot
+```
+
+### Translator
+
+```bash
+>> yay -S goldendict stardict
+```
+
+### Download
+
+```bash
+>> yay -S motrix
+```
+
 ### Caffeine
 
 ```bash
 >> yay -S caffeine
 ```
-
-## Other
 
 ### switch kernel
 
