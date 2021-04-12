@@ -6,22 +6,7 @@
 
 ```bash
 >> sudo pacman-mirrors -i -c China -m rank -g
-```
-
-```bash
->> sudo vi /etc/pacman.conf
-
-```
-
-```conf
-[archlinuxcn]
-# SigLevel = Optional TrustedOnly
-SigLevel = Never
-Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
-
-[arch4edu]
-SigLevel = Never
-Server = https://mirrors.tuna.tsinghua.edu.cn/arch4edu/$arch
+>> sudo pacman -Syyu
 ```
 
 ### Yay
@@ -36,6 +21,29 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/arch4edu/$arch
 # >> sudo pacman-key --refresh-keys
 ```
 
+```bash
+>> yay -S base-devel
+```
+
+```bash
+>> sudo vi /etc/pacman.conf
+```
+
+```conf
+[archlinuxcn]
+# SigLevel = Optional TrustedOnly
+SigLevel = Never
+Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
+
+[arch4edu]
+SigLevel = Never
+Server = https://mirrors.tuna.tsinghua.edu.cn/arch4edu/$arch
+```
+
+```bash
+>> yay -Syyu
+```
+
 ### Yay Mirror
 
 ```bash
@@ -43,12 +51,6 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/arch4edu/$arch
 >> yay -Syu --devel --combinedupgrade --save
 >> yay --aururl "https://aur.tuna.tsinghua.edu.cn" --save
 >> yay -P -g
-```
-
-### Paru
-
-```bash
->> sudo yay -S paru # proxy
 ```
 
 ### Go mirror
@@ -59,14 +61,7 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/arch4edu/$arch
 >> go env -w GOPROXY=https://goproxy.io,direct
 ```
 
-### Soft
-
-### init soft
-
-```bash
->> yay -Syyu
->> yay -S base-devel
-```
+## Server && Desktop
 
 ### Vim
 
@@ -76,30 +71,29 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/arch4edu/$arch
 >> sudo ln -s /usr/bin/vim /usr/bin/vi
 ```
 
-### Some base soft
+### Base
 
 ```bash
->> yay -S tmux zsh fish mosh
-
+>> yay -S tmux zsh fish
+>> yay -S mosh
 
 >> yay -S unzip
 >> yay -S exa lsd
->> yay -S jq bat the_silver_searcher fd fzf # the_silver_searcher = ag
->> yay -S nload net-tools curl axel aria2
->> yay -S progress cv pv ripgrep
->> yay -S htop
+
+>> yay -S jq bat fd multitail
+>> yay -S ripgrep the_silver_searcher fzf ack # the_silver_searcher = ag
+>> yay -S progress pv # cv
+>> yay -S ncdu dust diskus # tin-summer(need rust; cmd: sn ar)
+>> yay -S ranger mc 
+
+>> yay -S nload net-tools
+>> yay -S axel aria2
+>> yay -S curl httpie
+>> yay -S htop glances
 >> # yay -S atop bashtop iotop iftop nmon
 >> # yay -S cpustat vmstat dstat
->> yay -S glances ncdu ranger mc 
->> yay -S tig multitail httpie
->> yay -S font-manager wqy-microhei wqy-microhei-lite wqy-bitmapfont wqy-zenhei
->> yay -S ttf-roboto noto-fonts ttf-dejavu ttf-dejavu-sans-code ttf-sarasa-gothic
->> yay -S noto-fonts-cjk adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts
->> yay -S ttf-wps-fonts # ttf-wps-win10 ttf-win10 ttf-windows 
->> yay -S adobe-source-code-pro-fonts adobe-source-sans-pro-fonts adobe-source-serif-pro-fonts
 
-
->> # -- yay -S all-repository-fonts --
+>> yay -S tig
 ```
 
 ### Docker
@@ -133,12 +127,33 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/arch4edu/$arch
 >> yay -S proxychains privoxy polipo tinyproxy
 ```
 
-## X Soft
-
-### arandr
+### Browser
 
 ```bash
->> yay -S arandr
+>> yay -S falkon
+```
+
+
+## Server
+
+### sshd
+
+```bash
+>> yay -S dropbear # mosh openssh
+```
+
+## Desktop
+
+### Fonts
+
+```bash
+>> yay -S font-manager wqy-microhei wqy-microhei-lite wqy-bitmapfont wqy-zenhei
+>> yay -S ttf-roboto noto-fonts ttf-dejavu ttf-dejavu-sans-code ttf-sarasa-gothic
+>> yay -S noto-fonts-cjk adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts
+>> yay -S ttf-wps-fonts # ttf-wps-win10 ttf-win10 ttf-windows 
+>> yay -S adobe-source-code-pro-fonts adobe-source-sans-pro-fonts adobe-source-serif-pro-fonts
+
+>> # -- yay -S all-repository-fonts --
 ```
 
 ### Input -- ibus-rime
@@ -177,13 +192,12 @@ export QT_IM_MODULE=ibus
 ### Browser
 
 ```bash
->> yay -S palemoon
->> yay -S vivaldi
 >> yay -S brave
 >> yay -S microsoft-edge-dev-bin
+>> yay -S vivaldi
 >> yay -S google-chrome chromium 
 >> yay -S opera
->> yay -S falkon
+>> yay -S palemoon
 ```
 
 ### VS Code
@@ -256,9 +270,21 @@ export QT_IM_MODULE=ibus
 >> # yay -S albert-lite
 ```
 
-### kodi todesk deskcreen m3u8-downloader
+### kodi todesk deskcreen(gnome-network-displays) m3u8-downloader
+
+
+
+----
+----
+----
 
 ## Other
+
+### Paru
+
+```bash
+>> sudo yay -S paru # proxy
+```
 
 ### Sync Date
 
@@ -266,6 +292,12 @@ export QT_IM_MODULE=ibus
 >> date
 >> sudo ntpdate ntp1.aliyun.com
 >> sudo hwclock -w
+```
+
+### arandr
+
+```bash
+>> yay -S arandr
 ```
 
 ### switchhosts
