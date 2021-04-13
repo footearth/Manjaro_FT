@@ -6,23 +6,6 @@
 
 ```bash
 >> sudo pacman-mirrors -i -c China -m rank -g
->> sudo pacman -Syyu
-```
-
-### Yay
-
-```bash
->> sudo pacman -Syy yay
-
-# >> sudo pacman-mirrors -g
-# >> sudo pacman -Syy
-# >> sudo pacman -S archlinux-keyring
-# >> sudo pacman-key --populate archlinux
-# >> sudo pacman-key --refresh-keys
-```
-
-```bash
->> yay -S base-devel
 ```
 
 ```bash
@@ -41,16 +24,34 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/arch4edu/$arch
 ```
 
 ```bash
->> yay -Syyu
+>> sudo pacman -Syyu
 ```
 
-### Yay Mirror
+### Yay
+
+```bash
+>> sudo pacman -Syy yay
+
+# >> sudo pacman-mirrors -g
+# >> sudo pacman -Syy
+# >> sudo pacman -S archlinux-keyring
+# >> sudo pacman-key --populate archlinux
+# >> sudo pacman-key --refresh-keys
+```
 
 ```bash
 >> mkdir ~/.config/yay
 >> yay -Syu --devel --combinedupgrade --save
 >> yay --aururl "https://aur.tuna.tsinghua.edu.cn" --save
 >> yay -P -g
+```
+
+```bash
+>> yay -S base-devel
+```
+
+```bash
+>> yay -Syyu
 ```
 
 ### Go mirror
