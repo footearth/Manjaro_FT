@@ -75,10 +75,11 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/arch4edu/$arch
 ### Base
 
 ```bash
->> yay -S tmux zsh fish
+>> yay -S zsh fish
 >> yay -S mosh
+>> yay -S tmux tmuxp
 
->> yay -S unzip
+>> yay -S unzip neofetch
 >> yay -S exa lsd
 
 >> yay -S jq bat fd multitail
@@ -265,7 +266,8 @@ export QT_IM_MODULE=ibus
 ### albert
 
 ```bash
->> yay -S albert-minimal # proxy
+>> yay -S utools # proxy
+>> # albert-minimal proxy
 
 >> # yay -S albert
 >> # yay -S albert-lite
