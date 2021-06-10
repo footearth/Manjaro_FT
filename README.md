@@ -85,7 +85,7 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/arch4edu/$arch
 >> yay -S jq bat fd multitail
 >> yay -S ripgrep the_silver_searcher fzf ack # the_silver_searcher = ag
 >> yay -S progress pv # cv
->> yay -S ncdu dust diskus # tin-summer(need rust; cmd: sn ar)
+>> yay -S duf ncdu dust diskus # tin-summer(need rust; cmd: sn ar)
 >> yay -S ranger mc 
 
 >> yay -S nload net-tools
