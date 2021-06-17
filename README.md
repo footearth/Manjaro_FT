@@ -95,7 +95,7 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/arch4edu/$arch
 >> # yay -S atop bashtop iotop iftop nmon
 >> # yay -S cpustat vmstat dstat
 
->> yay -S tig
+>> yay -S tig gitui lazygit
 ```
 
 ### Docker
