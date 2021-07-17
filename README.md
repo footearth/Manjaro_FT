@@ -80,13 +80,14 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/arch4edu/$arch
 >> yay -S tmux tmuxp
 
 >> yay -S unzip neofetch
+>> yay -S osquery
 >> yay -S exa lsd
 
 >> yay -S jq bat fd multitail
 >> yay -S ripgrep the_silver_searcher fzf ack # the_silver_searcher = ag
 >> yay -S progress pv # cv
 >> yay -S duf ncdu gdu dust diskus # tin-summer(need rust; cmd: sn ar)
->> yay -S ranger mc 
+>> yay -S ranger mc
 
 >> yay -S nload net-tools
 >> yay -S axel aria2
@@ -95,7 +96,7 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/arch4edu/$arch
 >> # yay -S atop bashtop iotop iftop nmon
 >> # yay -S cpustat vmstat dstat
 
->> yay -S tig gitui lazygit
+>> yay -S tig gitui lazygit onefetch
 ```
 
 ### Docker
