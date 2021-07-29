@@ -273,11 +273,21 @@ export QT_IM_MODULE=ibus
 >> # yay -S albert-lite
 ```
 
-### kodi todesk deskcreen(gnome-network-displays) m3u8-downloader
-
-
+### todesk deskcreen(gnome-network-displays) m3u8-downloader
 
 ----
+----
+
+baidunetdisk balenaEther kodi GeoGebra GoogleEarth stellarium
+
+3D blender dust3D FreeCAD LibreCAD QCAD OpenSCAD Spline
+
+电子 Fritzing KiCAD Eeschema GerbView PCBCalculator PcbNew Qucs XCircuit(QFlow) staticfreesoft
+
+笔记 Joplin Typora Zettlr
+
+QGis
+
 ----
 ----
 
@@ -348,6 +358,14 @@ export QT_IM_MODULE=ibus
 >> yay -S virtualbox canonical-multipass kata-linux-container
 ```
 
+### mail client
+
+```bash
+>> yay -S libsecret seahorse geary mailspring claws-mail protonmail-desktop
+
+# kanmail
+```
+
 ### lm_sensors
 
 ```bash
@@ -359,12 +377,6 @@ export QT_IM_MODULE=ibus
 >> sudo sensors -s
 >> sensors -u
 >> inxi -F
-```
-
-### mail client
-
-```bash
->> yay -S libsecret seahorse geary mailspring claws-mail protonmail-desktop
 ```
 
 ### Project Drawing
