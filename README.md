@@ -67,7 +67,8 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/arch4edu/$arch
 ### Vim
 
 ```bash
->> yay -S vim neovim helix-bin amp
+>> yay -S vim neovim helix-bin
+>> yay -S amp # proxy
 >> sudo mv /usr/bin/vi /usr/bin/viex
 >> sudo ln -s /usr/bin/nvim /usr/bin/vi
 ```
