@@ -129,6 +129,7 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/arch4edu/$arch
 
 ```bash
 >> yay -S proxychains privoxy polipo tinyproxy
+>> yay -S polipo-git # maybe need it
 ```
 
 ### Browser
