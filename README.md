@@ -76,6 +76,7 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/arch4edu/$arch
 ### Base
 
 ```bash
+>> yay -S imv arandr
 >> yay -S zsh fish
 >> yay -S mosh
 >> yay -S tmux tmuxp
@@ -308,12 +309,6 @@ QGis
 >> date
 >> sudo ntpdate ntp1.aliyun.com
 >> sudo hwclock -w
-```
-
-### arandr
-
-```bash
->> yay -S arandr
 ```
 
 ### switchhosts
