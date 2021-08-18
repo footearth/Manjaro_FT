@@ -67,8 +67,8 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/arch4edu/$arch
 ### Vim
 
 ```bash
->> yay -S vim neovim helix-bin
->> yay -S amp # proxy
+>> yay -S vim neovim
+>> yay -S helix-bin amp # proxy
 >> sudo mv /usr/bin/vi /usr/bin/viex
 >> sudo ln -s /usr/bin/nvim /usr/bin/vi
 ```
@@ -247,8 +247,7 @@ export QT_IM_MODULE=ibus
 ### Terminal
 
 ```bash
->> yay -S tilda terminator
->> yay -S terminus-terminal-bin # proxy
+>> yay -S tilda terminator tabby-bin
 
 >> # yay -S alacritty kitty hyper
 ```
