@@ -77,7 +77,7 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/arch4edu/$arch
 
 ```bash
 >> yay -S imv arandr
->> yay -S zsh fish
+>> yay -S zsh fish nushell
 >> yay -S mosh
 >> yay -S tmux tmuxp
 
@@ -276,6 +276,13 @@ export QT_IM_MODULE=ibus
 >> # yay -S albert-lite
 ```
 
+### Markdown
+
+```bash
+>> yay -S obsidian
+# Joplin Typora Zettlr
+```
+
 ### todesk deskcreen(gnome-network-displays) m3u8-downloader
 
 ----
@@ -286,8 +293,6 @@ baidunetdisk balenaEther kodi GeoGebra GoogleEarth stellarium
 3D blender dust3D FreeCAD LibreCAD QCAD OpenSCAD Spline
 
 电子 Fritzing KiCAD Eeschema GerbView PCBCalculator PcbNew Qucs XCircuit(QFlow) staticfreesoft
-
-笔记 Joplin Typora Zettlr
 
 QGis
 
