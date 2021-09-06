@@ -76,9 +76,9 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/arch4edu/$arch
 ### Base
 
 ```bash
->> yay -S imv arandr
 >> yay -S zsh fish nushell
 >> yay -S mosh
+>> yay -S rsync
 >> yay -S tmux tmuxp
 
 >> yay -S unzip neofetch
@@ -150,6 +150,9 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/arch4edu/$arch
 
 ## Desktop
 
+```bash
+>> yay -S imv arandr
+```
 ### Fonts
 
 ```bash
@@ -279,7 +282,7 @@ export QT_IM_MODULE=ibus
 ### Markdown
 
 ```bash
->> yay -S obsidian
+>> yay -S obsidian anki
 # Joplin Typora Zettlr
 ```
 
