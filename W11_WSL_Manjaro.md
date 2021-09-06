@@ -96,6 +96,8 @@
 >> exit
 ```
 
+#### Change User 
+
 ```powershell
 >> .\Manjaro.exe config --default-user <username>
 >> .\Manjaro.exe --default-uid 1000
@@ -105,6 +107,20 @@
 ```powershell
 >> .\Manjaro.exe backup --tgz
 >> .\Manjaro.exe install backup.tar.gz
+```
+
+```powershell
+>> usermod -l <newuser> <olduser>
+
+>> sudo pkill -u <olduser>
+>> sudo pkill -9 -u <olduser>
+
+>> sudo usermod -d /home/<newuser> -m <newuser>
+
+>> groupmod -n <newuser> <olduser>
+>> sudo usermod -u 1000 <newuser>
+
+>> id <newuser>
 ```
 
 ### Manajro Init
@@ -189,5 +205,4 @@ net.ipv4.ip_unprivileged_port_start=0
 
 >> sudo chmod 4755 /usr/bin/newgidmap
 >> sudo chmod 4755 /usr/bin/newuidmap
-
 ```
