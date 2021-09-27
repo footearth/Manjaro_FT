@@ -76,9 +76,9 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/arch4edu/$arch
 ### Base
 
 ```bash
->> yay -S zsh fish nushell
+>> yay -S zsh fish nushell # oh-my-posh-git
 >> yay -S mosh
->> yay -S rsync
+>> yay -S rsync # fswatch need proxy # syncthing
 >> yay -S tmux tmuxp
 
 >> yay -S unzip neofetch
@@ -86,7 +86,8 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/arch4edu/$arch
 >> yay -S exa lsd
 
 >> yay -S jq bat fd multitail
->> yay -S ripgrep the_silver_searcher fzf ack # the_silver_searcher = ag
+>> yay -S ripgrep the_silver_searcher fzf ack fpp # the_silver_searcher = ag
+# >> yay -S # lrzsz
 >> yay -S progress pv # cv
 >> yay -S duf ncdu gdu dust diskus # tin-summer(need rust; cmd: sn ar)
 >> yay -S ranger mc
@@ -283,10 +284,11 @@ export QT_IM_MODULE=ibus
 
 ```bash
 >> yay -S obsidian anki
-# Joplin Typora Zettlr
+# joplin-beta typora zettlr cherrytree boost-note-bin
 ```
 
-### todesk deskcreen(gnome-network-displays) m3u8-downloader
+### todesk rustdesk-bin deskcreen(gnome-network-displays) m3u8-downloader
+### rclone
 
 ----
 ----
