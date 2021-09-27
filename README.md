@@ -283,10 +283,10 @@ export QT_IM_MODULE=ibus
 
 ```bash
 >> yay -S obsidian anki
-# Joplin Typora Zettlr
+# joplin-beta typora zettlr cherrytree boost-note-bin
 ```
 
-### todesk deskcreen(gnome-network-displays) m3u8-downloader
+### todesk rustdesk-bin deskcreen(gnome-network-displays) m3u8-downloader
 
 ----
 ----
