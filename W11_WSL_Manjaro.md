@@ -118,6 +118,7 @@
 ```
 
 ```powershell
+>> netsh winsock reset
 >> wsl
 ```
 
