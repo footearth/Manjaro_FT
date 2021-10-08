@@ -69,33 +69,47 @@
 
 #### scoop list
 
+- git 2.33.0.windows.2 [main]
 - 7zip 19.00 [main]
-- anki 2.1.47 [extras]
 - aria2 1.36.0-1 [main]
-- axel 2.16.1-1 [main]
+
 - busybox 4264-gc79f13025 [main]
-- curl 7.78.0_4 [main]
+- msys2 2021-07-25 [main]
+
+- sudo 0.2020.01.26 [main]
+- vim 8.2.2824 [main]
+- neovim 0.5.1 [main]
+- telnet msys-inetutils-1.7-1 [main]
+
+- nu 0.38.0 [main]
+- oh-my-posh3 5.7.1 [main]
+- posh-git 1.0.0 [extras]
+
+- privoxy 3.0.32 [extras]
+
+- windterm 2.1.0 [extras]
+- tabby 1.0.158 [extras]
+- mobaxterm 21.4 [extras]
+
 - DejaVuSansMono-NF 2.1.0 [nerd-fonts]
 - DejaVuSansMono-NF-Mono 2.1.0 [nerd-fonts]
-- git 2.33.0.windows.2 [main]
 - Hack-NF 2.1.0 [nerd-fonts]
 - Hack-NF-Mono 2.1.0 [nerd-fonts]
-- mobaxterm 21.3 [extras]
-- msys2 2021-07-25 [main]
-- neovim 0.5.0 [main]
-- nu 0.36.0 [main]
-- obsidian 0.12.15 [extras]
-- oh-my-posh3 3.176.0 [main]
-- packer 1.7.4 [main]
-- posh-git 1.0.0 [extras]
-- potplayer 210729 [extras]
-- sudo 0.2020.01.26 [main]
-- tabby 1.0.155 [extras]
-- telnet msys-inetutils-1.7-1 [main]
+
+- vscode 1.61.0 [extras]
+
 - uget 2.2.2 [extras]
-- vim 8.2.2824 [main]
-- vscode 1.60.0 [extras]
-- windterm 2.1.0 [extras]
+- sumatrapdf 3.3.3 [extras]
+- potplayer 210929 [extras]
+
+- vagrant 2.2.18 [main]
+- packer 1.7.6 [main]
+
+- obsidian 0.12.15 [extras]
+- logseq 0.4.2 [extras]
+- zotero 5.0.96.3 [extras]
+- digikam 7.3.0 [extras]
+- anki 2.1.48 [extras]
 
 ### ManjaroWSL
 
