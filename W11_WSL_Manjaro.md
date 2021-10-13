@@ -45,7 +45,8 @@
 >> mkdir -p $PROFILE
 >> touch $PROFILE
 >> nvim $PROFILE
->> oh-my-posh --init --shell pwsh --config "$(scoop prefix oh-my-posh3)\themes\ys.omp.json" | Invoke-Expression
+>> oh-my-posh --init --shell pwsh --config "$(scoop prefix oh-my-posh3)\themes\ys.omp.json" | Invoke-Expression # powershell
+>> config set prompt (build-string "oh-my-posh --config " (build-string (scoop prefix oh-my-posh3).0 "/themes/ys.omp.json") " | str collect") # w11 scoop nushell
 
 >> scoop install uget
 >> scoop install tabby windterm mobaxterm
