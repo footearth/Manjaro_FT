@@ -90,7 +90,7 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/arch4edu/$arch
 # >> yay -S # lrzsz
 >> yay -S progress pv # cv
 >> yay -S duf ncdu gdu dust diskus # tin-summer(need rust; cmd: sn ar)
->> yay -S ranger mc
+>> yay -S vifm ranger mc
 
 >> yay -S nload net-tools
 >> yay -S axel aria2
