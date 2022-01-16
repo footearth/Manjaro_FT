@@ -93,7 +93,7 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/arch4edu/$arch
 >> yay -S vifm ranger mc
 
 >> yay -S nload net-tools
->> yay -S axel aria2
+>> yay -S axel aria2 croc # lszsz trzsz
 >> yay -S curl httpie
 >> yay -S htop glances
 >> # yay -S atop bashtop iotop iftop nmon

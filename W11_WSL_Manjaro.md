@@ -9,7 +9,6 @@
 - 中文环境
 - 梯子自备
 - 电脑管家
-- Obsidian
 
 ## Dev
 
@@ -70,47 +69,64 @@
 
 #### scoop list
 
-- git 2.33.0.windows.2 [main]
-- 7zip 19.00 [main]
+- git 2.34.1.windows.1 [main]
+- 7zip 21.07 [main]
 - aria2 1.36.0-1 [main]
+- curl 7.81.0 [main]
+- axel 2.16.1-1 [main]
+- croc 9.5.0 [main]
+<!--
+- lrzsz trzsz
+-->
 
-- busybox 4264-gc79f13025 [main]
-- msys2 2021-07-25 [main]
+- miller 6.0.0 [main]
+
+- busybox 4487-gd239d2d52 [main]
+<!--
+- msys2 [main]
+-->
 
 - sudo 0.2020.01.26 [main]
 - vim 8.2.2824 [main]
-- neovim 0.5.1 [main]
+- neovim 0.6.1 [main]
 - telnet msys-inetutils-1.7-1 [main]
 
-- nu 0.38.0 [main]
-- oh-my-posh3 5.7.1 [main]
+- nu 0.42.0 [main]
+- oh-my-posh3 6.49.2 [main]
 - posh-git 1.0.0 [extras]
 
-- privoxy 3.0.32 [extras]
+- privoxy 3.0.33 [extras]
 
-- windterm 2.1.0 [extras]
-- tabby 1.0.158 [extras]
-- mobaxterm 21.4 [extras]
+<!--
+- windterm [extras]
+- mobaxterm [extras]
+-->
+- tabby 1.0.168 [extras]
 
 - DejaVuSansMono-NF 2.1.0 [nerd-fonts]
 - DejaVuSansMono-NF-Mono 2.1.0 [nerd-fonts]
 - Hack-NF 2.1.0 [nerd-fonts]
 - Hack-NF-Mono 2.1.0 [nerd-fonts]
 
-- vscode 1.61.0 [extras]
+- vscode 1.63.2 [extras]
 
 - uget 2.2.2 [extras]
 - sumatrapdf 3.3.3 [extras]
-- potplayer 210929 [extras]
+- potplayer 211118 [extras]
 
-- vagrant 2.2.18 [main]
-- packer 1.7.6 [main]
+- vagrant 2.2.19 [main]
+- packer 1.7.8 [main]
 
 - obsidian 0.12.15 [extras]
 - logseq 0.4.2 [extras]
 - zotero 5.0.96.3 [extras]
 - digikam 7.3.0 [extras]
 - anki 2.1.48 [extras]
+
+- sqlite 3.37.2 [main]
+- dbeaver 21.3.1 [extras]
+- dotnet-script 1.3.1 [main]
+- dotnet-sdk 6.0.101 [main]
 
 ### ManjaroWSL
 
