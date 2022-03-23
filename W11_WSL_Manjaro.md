@@ -44,8 +44,12 @@
 >> mkdir -p $PROFILE
 >> touch $PROFILE
 >> nvim $PROFILE
->> oh-my-posh --init --shell pwsh --config "$(scoop prefix oh-my-posh3)\themes\ys.omp.json" | Invoke-Expression # powershell
->> config set prompt (build-string "oh-my-posh --config " (build-string (scoop prefix oh-my-posh3).0 "/themes/ys.omp.json") " | str collect") # w11 scoop nushell
+>> oh-my-posh --init --shell pwsh --config "$(scoop prefix oh-my-posh)\themes\ys.omp.json" | Invoke-Expression # powershell
+>> config set prompt ("oh-my-posh prompt print primary --config " + ((scoop prefix oh-my-posh) | str trim) + "/themes/ys.omp.json") # w11 scoop nushell
+
+>> sed -i '$a\let-env PROMPT_COMMAND = ("oh-my-posh prompt print primary --config " + ((scoop prefix oh-my-posh) | str trim) + "/themes/ys.omp.json")' $nu.config-path
+>> sed -i '$a\let-env PROMPT_COMMAND_RIGHT = \"\"' $nu.config-path
+>> sed -i '$a\let-env PROMPT_INDICATOR = \"\"' $nu.config-path
 
 >> scoop install uget
 >> scoop install tabby windterm mobaxterm
@@ -69,64 +73,75 @@
 
 #### scoop list
 
-- git 2.34.1.windows.1 [main]
-- 7zip 21.07 [main]
-- aria2 1.36.0-1 [main]
-- curl 7.81.0 [main]
-- axel 2.16.1-1 [main]
-- croc 9.5.0 [main]
+- dark
+- innounp
+- scoop
+
+- git
+- 7zip
+- aria2
+- curl
+- axel
 <!--
 - lrzsz trzsz
 -->
 
-- miller 6.0.0 [main]
-
-- busybox 4487-gd239d2d52 [main]
+- sudo
+- busybox
 <!--
-- msys2 [main]
+- msys2
+-->
+- vim
+- neovim
+- telnet
+
+- croc
+- miller
+
+
+- nu
+- oh-my-posh
+- posh-git
+
+- privoxy
+
+<!--
+- windterm
+- mobaxterm
 -->
 
-- sudo 0.2020.01.26 [main]
-- vim 8.2.2824 [main]
-- neovim 0.6.1 [main]
-- telnet msys-inetutils-1.7-1 [main]
+- tabby
 
-- nu 0.42.0 [main]
-- oh-my-posh3 6.49.2 [main]
-- posh-git 1.0.0 [extras]
+- DejaVuSansMono-NF
+- DejaVuSansMono-NF-Mono
+- Hack-NF
+- Hack-NF-Mono
 
-- privoxy 3.0.33 [extras]
+- vscode
+
+- uget
+- sumatrapdf
+- potplayer
 
 <!--
-- windterm [extras]
-- mobaxterm [extras]
+- vagrant
+- packer
+- multipass
+
+- sqlite
+- dbeaver
+
+- dotnet-script
+- dotnet-sdk
+
+- obsidian
+- logseq
+- zotero
+- digikam
+- anki
 -->
-- tabby 1.0.168 [extras]
 
-- DejaVuSansMono-NF 2.1.0 [nerd-fonts]
-- DejaVuSansMono-NF-Mono 2.1.0 [nerd-fonts]
-- Hack-NF 2.1.0 [nerd-fonts]
-- Hack-NF-Mono 2.1.0 [nerd-fonts]
-
-- vscode 1.63.2 [extras]
-
-- uget 2.2.2 [extras]
-- sumatrapdf 3.3.3 [extras]
-- potplayer 211118 [extras]
-
-- vagrant 2.2.19 [main]
-- packer 1.7.8 [main]
-
-- obsidian 0.12.15 [extras]
-- logseq 0.4.2 [extras]
-- zotero 5.0.96.3 [extras]
-- digikam 7.3.0 [extras]
-- anki 2.1.48 [extras]
-
-- sqlite 3.37.2 [main]
-- dbeaver 21.3.1 [extras]
-- dotnet-script 1.3.1 [main]
-- dotnet-sdk 6.0.101 [main]
+- ManjaroWSL
 
 ### ManjaroWSL
 
