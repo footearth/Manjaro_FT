@@ -76,9 +76,10 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/arch4edu/$arch
 ### Base
 
 ```bash
->> yay -S zsh fish nushell # oh-my-posh-git
+>> yay -S zsh fish nushell # oh-my-posh-git startship
 >> yay -S mosh
 >> yay -S rsync # fswatch need proxy # syncthing
+>> yay -S zellij
 >> yay -S tmux tmuxp
 
 >> yay -S unzip neofetch
@@ -205,7 +206,7 @@ export QT_IM_MODULE=ibus
 >> yay -S brave
 >> yay -S microsoft-edge-dev-bin
 >> yay -S vivaldi
->> yay -S google-chrome chromium 
+>> yay -S google-chrome chromium
 >> yay -S opera
 >> yay -S palemoon
 ```

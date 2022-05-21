@@ -29,8 +29,8 @@
 >> $env:https_proxy=$env:http_proxy
 >> scoop/shim/curl cip.cc
 >> # nu shell proxy env
->> let-env http_proxy = http://localhost:8118
->> let-env https_proxy = $nu.env.http_proxy
+>> let-env http_proxy = 'http://localhost:8118'
+>> let-env https_proxy = $env.http_proxy
 >> curl cip.cc
 
 >> scoop install git
@@ -45,11 +45,15 @@
 >> touch $PROFILE
 >> nvim $PROFILE
 >> oh-my-posh --init --shell pwsh --config "$(scoop prefix oh-my-posh)\themes\ys.omp.json" | Invoke-Expression # powershell
->> config set prompt ("oh-my-posh prompt print primary --config " + ((scoop prefix oh-my-posh) | str trim) + "/themes/ys.omp.json") # w11 scoop nushell
 
->> sed -i '$a\let-env PROMPT_COMMAND = ("oh-my-posh prompt print primary --config " + ((scoop prefix oh-my-posh) | str trim) + "/themes/ys.omp.json")' $nu.config-path
->> sed -i '$a\let-env PROMPT_COMMAND_RIGHT = \"\"' $nu.config-path
->> sed -i '$a\let-env PROMPT_INDICATOR = \"\"' $nu.config-path
+>> oh-my-posh init nu
+>> sed -i '$a\source ~/.oh-my-posh.nu' $nu.config-path
+
+# >> config set prompt ("oh-my-posh prompt print primary --config " + ((scoop prefix oh-my-posh) | str trim) + "/themes/ys.omp.json") # w11 scoop nushell
+
+# >> sed -i '$a\let-env PROMPT_COMMAND = ("oh-my-posh prompt print primary --config " + ((scoop prefix oh-my-posh) | str trim) + "/themes/ys.omp.json")' $nu.config-path
+# >> sed -i '$a\let-env PROMPT_COMMAND_RIGHT = \"\"' $nu.config-path
+# >> sed -i '$a\let-env PROMPT_INDICATOR = \"\"' $nu.config-path
 
 >> scoop install uget
 >> scoop install tabby windterm mobaxterm
@@ -95,12 +99,15 @@
 - neovim
 - telnet
 
+- jq
+- bat
+
 - croc
 - miller
 
-
 - nu
 - oh-my-posh
+- starship
 - posh-git
 
 - privoxy
@@ -111,6 +118,7 @@
 -->
 
 - tabby
+- alacritty
 
 - DejaVuSansMono-NF
 - DejaVuSansMono-NF-Mono
@@ -121,15 +129,21 @@
 
 - uget
 - sumatrapdf
-- potplayer
+
+- mvp
 
 <!--
+- potplayer
+
 - vagrant
 - packer
 - multipass
 
 - sqlite
+
 - dbeaver
+- beekeeper-studio
+- ** AntaresSQL **
 
 - dotnet-script
 - dotnet-sdk
@@ -139,6 +153,8 @@
 - zotero
 - digikam
 - anki
+
+- blender
 -->
 
 - ManjaroWSL
@@ -173,7 +189,7 @@
 >> exit
 ```
 
-#### Change User 
+#### Change User
 
 ```powershell
 >> .\Manjaro.exe config --default-user <username>
