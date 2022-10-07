@@ -86,7 +86,7 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/arch4edu/$arch
 >> yay -S osquery
 >> yay -S exa lsd
 
->> yay -S jq bat fd multitail
+>> yay -S jq bat fd multitail fclones
 >> yay -S ripgrep the_silver_searcher fzf ack fpp # the_silver_searcher = ag
 # >> yay -S # lrzsz
 >> yay -S progress pv # cv

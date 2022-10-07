@@ -101,6 +101,7 @@
 
 - jq
 - bat
+- fclones
 
 - croc
 - miller
@@ -112,13 +113,13 @@
 
 - privoxy
 
+- tabby
+- wezterm
+- alacritty
 <!--
 - windterm
 - mobaxterm
 -->
-
-- tabby
-- alacritty
 
 - DejaVuSansMono-NF
 - DejaVuSansMono-NF-Mono
